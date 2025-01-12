@@ -96,6 +96,12 @@ This project is a backend API built with NestJS that allows users to "clock in" 
     │   │
     │   ├── main.ts
     │
+    ├── test
+    │   ├── hour
+    │   │   ├── hours.service.spec.ts
+    │   ├── user
+    │   │   ├── users.service.spec.ts
+    │   
     └── README.md
  ```
 
