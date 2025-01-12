@@ -9,8 +9,9 @@ This project is a backend API built with NestJS that allows users to "clock in" 
 1.  [Technologies Used](#technologies-used)
 2.  [Setup and Installation](#setup-and-installation)
 3.  [Project Structure](#project-structure)
-4.  [License](#license)
-5.  [Author](#author)
+4.  [Tests](#tests)
+5.  [License](#license)
+6.  [Author](#author)
 
 
 <h1 id="technologies-used">🛠 Technologies Used </h1>
@@ -97,6 +98,8 @@ This project is a backend API built with NestJS that allows users to "clock in" 
     │
     └── README.md
  ```
+
+<h1 id="technologies-used">🧑‍💻 Tests </h1>
 
 <h1 id="license">📜 License </h1>
 
