@@ -101,6 +101,10 @@ This project is a backend API built with NestJS that allows users to "clock in" 
 
 <h1 id="technologies-used">🧑‍💻 Tests </h1>
 
+    ```bash
+    npm test
+    ```
+
 <h1 id="license">📜 License </h1>
 
 Distributed under the MIT License. See `LICENSE` for more information.
