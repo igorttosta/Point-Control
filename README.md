@@ -1,25 +1,23 @@
 <div class="status-bar" style="text-align: center;"> 🛠 Projeto em construção 🛠... </div>
 
-# User Registration with Document Verification
+# User Point Control
 
-This project is a backend API built with NestJS that enables user registration with automated document verification using AWS services (Textract, S3, DynamoDB, and Lambda), along with email verification using AWS SES.
+This project is a backend API built with NestJS that allows users to "clock in" and have a history of hours worked.
 
 # 📑 Table of Contents
 
-01. [Overview](#overview)
-02. [Technologies Used](#technologies-used)
-03. [Setup and Installation](#setup-and-installation)
-04. [Project Structure](#project-structure)
-05. [License](#license)
-06. [Author](#author)
+1.  [Technologies Used](#technologies-used)
+2.  [Setup and Installation](#setup-and-installation)
+3.  [Project Structure](#project-structure)
+4.  [License](#license)
+5.  [Author](#author)
 
-<h1 id="overview">📘 Overview </h1>
-
-This system enables user registration with automatic data verification through OCR (Optical Character Recognition) on identity documents (e.g., ID cards, driver's licenses). It leverages AWS services for file storage, OCR, data validation, and database management.
 
 <h1 id="technologies-used">🛠 Technologies Used </h1>
 
 - **NestJS** for backend framework
+- **Swagger** for API Documentation
+- **Jest** for test API
 - **ReactJS/MUI** for frontend framework
 
 ---
@@ -27,12 +25,10 @@ This system enables user registration with automatic data verification through O
 
 ## Prerequisites
 
-- Node.js, Nesj.js and React.js
-- Install Node: https://nodejs.org/pt/download
-- Install Nest: https://docs.nestjs.com
-- ```bash
-    npm i -g @nestjs/cli
-  ```
+- Node.js: https://nodejs.org/pt/download
+- Nesj.js: https://docs.nestjs.com
+- React.js
+- pnpm: npm install -g pnpm@latest-10
 
 ## Steps
 
@@ -56,6 +52,10 @@ This system enables user registration with automatic data verification through O
     ```bash
     npx typeorm migration:run -d dist/database/orm-cli-config.js
     ```
+6. **Start the aplication**
+    ```bash
+    pnpm run start:dev
+    ```
 
 <h1 id="project-structure">📂 Project Structure </h1>
 
@@ -63,32 +63,39 @@ This system enables user registration with automatic data verification through O
     ├── src
     │   ├── controller
     │   │   ├── app.controller.ts
+    │   │   ├── hour.controller.ts
     │   │   ├── user.controller.ts
     │   │
     │   ├── database
     │   │   ├── database.module.ts
+    │   │   ├── orm-cli-config.ts
     │   │
     │   ├── dto
-    │   │   ├── create.user.dto.ts
+    │   │   ├── create-hour.dto.ts
+    │   │   ├── create-user.dto.ts
     │   │
     │   ├── entities
     │   │   ├── hour.entity.ts
     │   │   ├── user.entity.ts
     │   │
     │   ├── migration
-    │   │   ├── 
+    │   │   ├── CreateUserTable.ts
+    │   │   ├── CreateHourTable.ts
+    │   │   ├── CreateUserFkHourTable.ts
     │   │
     │   ├── modules
     │   │   ├── app.module.ts
     │   │   ├── user.module.ts
+    │   │   ├── hour.module.ts
     │   │
     │   ├── service
     │   │   ├── app.service.ts
     │   │   ├── user.service.ts
+    │   │   ├── hour.service.ts
     │   │
     │   ├── main.ts
     │
-    └── README.md                     # Documentation for the project
+    └── README.md
  ```
 
 <h1 id="license">📜 License </h1>
