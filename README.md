@@ -8,8 +8,8 @@ This project is a backend API built with NestJS that allows users to "clock in" 
 
 1.  [Technologies Used](#technologies-used)
 2.  [Setup and Installation](#setup-and-installation)
-3.  [Project Structure](#project-structure)
-4.  [Tests](#tests)
+3.  [Tests](#tests)
+4.  [Project Structure](#project-structure)
 5.  [License](#license)
 6.  [Author](#author)
 
@@ -19,6 +19,7 @@ This project is a backend API built with NestJS that allows users to "clock in" 
 - **NestJS** for backend framework
 - **Swagger** for API Documentation
 - **Jest** for test API
+- **Figma** for UX/UI Design. [Click here to see](https://www.figma.com/design/qjvh3WoOo0X3doftAy7CSy/Point-Control?node-id=0-1&p=f&t=fLpV7KfxsjWhCqkp-0)
 - **ReactJS/MUI** for frontend framework
 
 ---
@@ -56,6 +57,13 @@ This project is a backend API built with NestJS that allows users to "clock in" 
 6. **Start the aplication**
     ```bash
     pnpm run start:dev
+    ```
+
+<h1 id="tests">🧑‍💻 Tests </h1>
+
+1. **To test the aplication**
+    ```bash
+    pnpm test
     ```
 
 <h1 id="project-structure">📂 Project Structure </h1>
@@ -104,12 +112,6 @@ This project is a backend API built with NestJS that allows users to "clock in" 
     │   
     └── README.md
  ```
-
-<h1 id="technologies-used">🧑‍💻 Tests </h1>
-
-    ```bash
-    npm test
-    ```
 
 <h1 id="license">📜 License </h1>
 
