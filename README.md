@@ -82,6 +82,7 @@ This project is a backend API built with NestJS that allows users to "clock in" 
     │   ├── dto
     │   │   ├── create-hour.dto.ts
     │   │   ├── create-user.dto.ts
+    │   │   ├── login-user.dto.ts
     │   │
     │   ├── entities
     │   │   ├── hour.entity.ts
@@ -93,6 +94,8 @@ This project is a backend API built with NestJS that allows users to "clock in" 
     │   │   ├── CreateUserFkHourTable.ts
     │   │
     │   ├── modules
+    │   │   ├── auth
+    │   │   │   ├── jwt.strategy.ts
     │   │   ├── app.module.ts
     │   │   ├── user.module.ts
     │   │   ├── hour.module.ts
